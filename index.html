@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfólio de Andre Prado</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #39ff14; /* neon green highlight on hover */
+  }
+  header {
+    position: relative;
+    background: linear-gradient(135deg, #000000 20%, #222222 80%);
+    text-align: center;
+    padding: 3rem 2rem;
+    overflow: hidden;
+    box-shadow: 0 0 30px #39ff14;
+  }
+  header h1 {
+    font-size: 3rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.3rem;
+  }
+  header p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #bbb;
+  }
+
+  /* Decorative "raios" lines */
+  header::before, header::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #39ff14;
+    border-radius: 50% 50% 0 50%;
+    width: 110px;
+    height: 110px;
+    top: -50px;
+    left: -50px;
+    transform: rotate(20deg);
+    opacity: 0.3;
+    animation: pulse 3s infinite alternate;
+  }
+  header::after {
+    border-radius: 50% 50% 50% 0;
+    top: auto;
+    bottom: -40px;
+    right: -40px;
+    left: auto;
+    transform: rotate(-25deg);
+    animation-delay: 1.5s;
+  }
+  @keyframes pulse {
+    0% { opacity: 0.3; transform: rotate(20deg) scale(1); }
+    100% { opacity: 0.6; transform: rotate(20deg) scale(1.1); }
+  }
+
+  main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    width: 90%;
+  }
+  section {
+    margin-bottom: 2.5rem;
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 12px rgba(57, 255, 20, 0.25);
+  }
+  h2 {
+    border-bottom: 2px solid #39ff14;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #39ff14;
+  }
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+  }
+
+  /* Skills container */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .skill {
+    background: #292929;
+    padding: 10px 15px;
+    border-radius: 6px;
+    flex: 1 1 30%;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 0 8px #39ff14;
+    transition: background-color 0.3s ease;
+  }
+  .skill:hover {
+    background-color: #39ff14;
+    color: #121212;
+    cursor: default;
+    box-shadow: 0 0 15px #39ff14;
+  }
+
+  footer {
+    background: #000000;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #222;
+  }
+  footer a {
+    color: #39ff14;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  footer a:hover {
+    color: #f0f0f0;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+    header p {
+      font-size: 1rem;
+    }
+    .skill {
+      flex: 1 1 45%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Andre Prado</h1>
+  <p>Full Stack Development Student</p>
+</header>
+
+<main>
+  <section>
+    <h2>👨‍💻 About Me</h2>
+    <p>Hi! My name is Andre Prado, and I'm a Full Stack Development student aiming to become a well-rounded developer, capable of working on both front-end and back-end. I have a background in data analysis and currently work in digital marketing, which gives me a strategic, results-oriented mindset.</p>
+    <p>I'm constantly learning and looking for opportunities to apply my skills through real-world projects.</p>
+  </section>
+
+  <section>
+    <h2>🚀 Skills & Tools</h2>
+    <div class="skills">
+      <div class="skill">JavaScript</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">React (learning)</div>
+      <div class="skill">Bootstrap</div>
+      <div class="skill">Tailwind CSS</div>
+      <div class="skill">Node.js (learning)</div>
+      <div class="skill">Express.js</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">MySQL (basic)</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">VS Code</div>
+      <div class="skill">Figma (basic knowledge)</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎯 Goals</h2>
+    <p>I'm currently seeking internship or freelance opportunities where I can gain hands-on experience, especially in web development. I’m passionate about learning, growing, and contributing to collaborative projects.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Contato: <a href="mailto:seu_email@example.com">seu_email@example.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/seu_perfil" target="_blank" rel="noopener">seu_perfil</a></p>
+  <p>GitHub: <a href="https://github.com/seu_usuario" target="_blank" rel="noopener">seu_usuario</a></p>
+</footer>
+
+</body>
+</html>
+
